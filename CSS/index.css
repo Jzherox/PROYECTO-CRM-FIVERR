@@ -18,6 +18,7 @@ main > section {
     background: #ffffff;
     height: 100vh;
     overflow: hidden;
+    padding: 20px;
 }
 
 main > section:nth-of-type(even) {
