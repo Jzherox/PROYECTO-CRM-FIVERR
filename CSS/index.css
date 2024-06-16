@@ -1,0 +1,31 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    background: #191919;
+    overflow-x: hidden;
+}
+
+main > header {
+    height: 100px;
+    background: #b1b1b1;
+    overflow: hidden;
+}
+
+main > section {
+    background: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main > section:nth-of-type(even) {
+    background: #ebebeb;
+}
+
+main > footer {
+    height: 100px;
+    background: #b1b1b1;
+    overflow: hidden;
+}
