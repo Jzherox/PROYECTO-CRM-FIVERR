@@ -4,25 +4,34 @@
 }
 
 body, main {
-    background: #191919;
+    background: #fff;
     overflow-x: hidden;
 }
 
 main > header {
-    height: 100px;
-    background: #b1b1b1;
+    height: 70px; width: 100%;
+    background: #bbdeff;
     overflow: hidden;
+    position: fixed;
 }
 
 main > section {
     background: #ffffff;
-    height: 100vh;
+    height: calc(100vh - 70px);
     overflow: hidden;
     padding: 20px;
 }
 
 main > section:nth-of-type(even) {
     background: #ebebeb;
+}
+
+main > section:nth-of-type(1) {
+    margin-top: 70px;
+    background-image: url(https://emprendedores.es/wp-content/uploads/Herramientas-CRM-1024x574.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 main > footer {
