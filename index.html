@@ -4,68 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Resources/icons/template.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/nav-bar.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <title>MASVENDES MX</title>
 </head>
 <body>
     <main>
         <header>
-            HEADER
+            <div class="nav-bar">
+                <div>
+                    <h2>MASVENDES</h2>
+                </div>
+                <div>
+                    <li><a href="#1">Inicio</a></li>
+                    <li><a href="#2">Conocenos</a></li>
+                    <li><a href="#3">Que es un CRM</a></li>
+                    <li><a href="#4">Como Funciona</a></li>
+                    <li><a href="#5">Precios</a></li>
+                    <li><a href="#6">Contactanos</a></li>
+                </div>
+            </div>
         </header>
-        <section>
+        <section id="1">
+            PRESENTACION
         </section>
-        <section>
-            (SECCION) Quienes somos? MASVENDES es una empresa Mexicana que nace con el objetivo de dar una solución a
-            empresas que desean aumentar sus ventas a traves de un CRM único en el mercado.
+        <section id="2">
+            <div>
+                <h3>Quienes somos?</h3>
+                <p>MASVENDES es una empresa Mexicana que nace con el objetivo de dar una solución a
+                empresas que desean aumentar sus ventas a traves de un CRM único en el mercado.</p>
+            </div>
         </section>
-        <section>
-            (SECCION) Que es un CRM?
-            Significa: "Customer Relationship Management" (Gestión de Relación con los Clientes). Es decir que un CRM es
-            una herramienta de gestión integrada de ventas, marketing, atención al cliente y todos los puntos de
-            contacto.
-        </section>
-        <section>
-            (SECCION) Como Funciona?
-            (Video ilustrativo de youtube)
-        </section>
-        <section>
-            (SECCION) Precios
+        <section id="3">
+            <div>
+                <h3>Que es un CRM?</h3>
+                <p>Significa: "Customer Relationship Management" (Gestión de Relación con los Clientes). Es decir que un CRM es
+                una herramienta de gestión integrada de ventas, marketing, atención al cliente y todos los puntos de
+                contacto.</p>
+            </div>
 
-            Paquete Básico
-            1 Usuario
-            1,000 prospectos
-            Cotizaciones
-            Calendario de actividades
-            Gratis primer año ($500 MXN mensuales a partir del año #2)
-
-            Paquete Intermedio
-            7 Usuario
-            10,000 prospectos
-            Cotizaciones
-            Calendario de actividades
-            Carga masiva de teléfonos de nuevos prospectos
-            Registro y control de Ventas
-            $1,000 MXN mensuales
-
-            Paquete Avanzado
-            15 Usuarios
-            50,000 prospectos
-            Cotizaciones
-            Calendario de actividades
-            Carga masiva de teléfonos de nuevos prospectos
-            Registro y control de Ventas
-            Modulo de servicio (registro de reparaciones de equipos)
-            Modulo para junta de seguimiento con indicadores y resultados
-            Modulo de Finanzas (registro cuentas bancarias y control de entradas, salidas y movimientos de dinero)
-            $2,000 MXN Mensuales
         </section>
-        <section>
-            (SECCION) Contáctanos (un formulario con los siguientes campos)
-            Nombre:
-            Telefono:
-            Email:
-            Empresa:
-            Mensaje:
+        <section id="4">
+            <div>
+                <h3>Como Funciona?</h3>
+                <iframe class="vid-instruc" width="700" height="460" src="https://www.youtube.com/embed/2069Kkhj2fE?si=vEGilmD6znnl4nok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="5">
+            <div>
+                <h3>Precios</h3>
+                <div class="precios">
+                    <div>
+                        <h3>Paquete Básico</h3>
+                        1 Usuario
+                        1,000 prospectos
+                        Cotizaciones
+                        Calendario de actividades
+                        Gratis primer año ($500 MXN mensuales a partir del año #2)
+                    </div>
+                    <div>
+                        <h3>Paquete Intermedio</h3>
+                        <p>
+                            7 Usuario
+                            10,000 prospectos
+                            Cotizaciones
+                            Calendario de actividades
+                            Carga masiva de teléfonos de nuevos prospectos
+                            Registro y control de Ventas
+                            $1,000 MXN mensuales
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Paquete Avanzado</h3>            
+                        <p>
+                            15 Usuarios
+                            50,000 prospectos
+                            Cotizaciones
+                            Calendario de actividades
+                            Carga masiva de teléfonos de nuevos prospectos
+                            Registro y control de Ventas
+                            Modulo de servicio (registro de reparaciones de equipos)
+                            Modulo para junta de seguimiento con indicadores y resultados
+                            Modulo de Finanzas (registro cuentas bancarias y control de entradas, salidas y movimientos de dinero)
+                            $2,000 MXN Mensuales
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="6">
+            <div class="formulario">
+                <h3>Contáctanos</h3>
+                <form action="ruta_de_tu_servidor" method="post">
+                    <div>
+                        <h4>Nombre:</h4>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div>
+                        <h4>Teléfono:</h4>
+                        <input type="tel" name="telefono" required>
+                    </div>
+                    <div>
+                        <h4>Email:</h4>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <h4>Empresa:</h4>
+                        <input type="text" name="empresa">
+                    </div>
+                    <div>
+                        <h4>Mensaje:</h4>
+                        <textarea name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <Footer>
             FOOTER

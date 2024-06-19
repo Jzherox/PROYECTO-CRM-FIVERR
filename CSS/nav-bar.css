@@ -1,0 +1,36 @@
+header {
+    color: #fff;
+}
+
+main > header {
+    height: 70px; width: 100%;
+    background: #191919;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    width: 90%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar > div:nth-of-type(1) {
+    width: auto; height: auto;
+}
+
+.nav-bar > div:nth-of-type(2) {
+    height: auto; width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.nav-bar div a {
+    color: #fff;
+}
