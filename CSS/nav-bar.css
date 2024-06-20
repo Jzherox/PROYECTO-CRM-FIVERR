@@ -1,9 +1,13 @@
+:root {
+    --header-h: 70px;
+}
+
 header {
     color: #fff;
 }
 
 main > header {
-    height: 70px; width: 100%;
+    height: var(--header-h); width: 100%;
     background: #191919;
     overflow: hidden;
     position: fixed;
@@ -24,11 +28,15 @@ main > header {
 }
 
 .nav-bar > div:nth-of-type(2) {
-    height: auto; width: 50%;
+    height: auto; width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-bar > div:nth-of-type(2) > li {
+    margin: 0px 10px 0px 10px;
 }
 
 .nav-bar div a {
