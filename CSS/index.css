@@ -3,17 +3,21 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a, li {
     color: black;
     text-decoration: none;
     list-style: none;
 }
 
-p {
-    text-align: center;
+p, h1, h2, h3, h4, h5, h6 {
+    text-align: center
 }
 
-h3 {
+section > div > h3 {
     margin: 20px;
 }
 
@@ -84,7 +88,7 @@ main > section:nth-of-type(6) {
 .precios {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
