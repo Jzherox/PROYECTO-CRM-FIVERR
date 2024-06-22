@@ -116,10 +116,18 @@ main > section:nth-of-type(6) {
     padding: 20px;
 }
 
-.formulario h4 {
+.formulario > form > div > h4 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+}
+
+.formulario > form > div > input, textarea {
+    border: 0;
+    border-bottom: 1px solid;
+    width: 300px;
+    padding: 5px;
+    resize: none;
 }
 
 footer {
