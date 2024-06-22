@@ -1,6 +1,7 @@
 * {
     padding: 0; margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
@@ -39,7 +40,7 @@ section > div {
 
 main > section {
     background: #ffffff;
-    height: calc(100vh -var(--header-h)); width: 100%;
+    height: calc(100vh - var(--header-h)); width: 100%;
     overflow: hidden;
     padding: 20px;
     display: flex;
@@ -71,15 +72,9 @@ main > section:nth-of-type(4) {
 
 .vid-instruc {
     height: clamp(100px, 80%, 80%); width: clamp(320px, 80%, 70%);
-    ;
-}
-
-main > section:nth-of-type(5) {
-    height: calc(100vh - var(--header-h));
 }
 
 main > section:nth-of-type(6) {
-    height: calc(100vh - var(--header-h));
     flex-direction: column;
     padding: 0;
 }
@@ -92,13 +87,12 @@ main > section:nth-of-type(6) {
 }
 
 .precios > div {
-    height: auto; width: 25%;
+    height: auto; width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 20px 0px 20px 0px;
     border: 1px solid #000;
 }
 
@@ -117,6 +111,8 @@ main > section:nth-of-type(6) {
 }
 
 .formulario {
+    background: #e8e8e8;
+    margin-top: 20px;
     padding: 20px;
 }
 

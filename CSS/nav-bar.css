@@ -1,110 +1,111 @@
 :root {
-    --header-h: 70px;
+   --header-h: 70px;
 }
 
 header {
-    color: #fff;
-}
-
-header > div > div > li, li > a {
-    color: black;
-    text-decoration: none;
-    list-style: none;
-}
-
-main > header {
-    height: var(--header-h); width: 100%;
-    background: #191919;
-    overflow: hidden;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: var(--header-h);
+  width: 100%;
+  background: #191919;
+  color: #fff;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-bar {
-    width: 90%; height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-bar > div:nth-of-type(1) {
-    width: auto; height: auto;
+.nav-bar > h2 {
+  width: auto;
+  height: auto;
 }
 
-.nav-bar > div:nth-of-type(2) {
-    height: auto; width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
 }
 
-.nav-bar > div:nth-of-type(2) > li {
-    margin: 0px 10px 0px 10px;
+.nav > li {
+  margin: 0 10px;
+  color: #fff;
 }
 
-.nav-bar div a {
-    color: #fff;
+.nav > li:last-of-type {
+  margin-right: 0; 
 }
 
-.burger {
-    position: relative;
-    width: 40px;
-    height: 25px;
-    background: transparent;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #fff;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
+.nav > li a {
+  color: #fff;
+  padding: 10px 5px;
+}
+
+.nav > li:last-of-type a {
+  color: #000;
+  background: #e5e5e5;
+  padding: 10px 15px;
+}
+
+.nav > li:last-of-type a:hover {
+  background: #fff;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: none;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: -4px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 24px;
+  left: 5px;
+}

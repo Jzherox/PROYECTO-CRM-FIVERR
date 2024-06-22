@@ -1,6 +1,6 @@
 @media screen and (max-width: 1060px) {
-    main > section:nth-of-type(5) {
-        height: fit-content;
+    main>section:nth-of-type(5) {
+        height: auto;
     }
 
     .precios {
@@ -10,16 +10,42 @@
     }
 
     .precios > div {
-        width: clamp(200px, 80%, 80%);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .precios > div:last-of-type {
+        margin-bottom: 0;
     }
 }
 
-@media screen and (max-width: 850px) {
-    .nav-bar > div:nth-of-type(2) {
-        display: none;
+@media screen and (max-width: 950px) {
+    .burger {
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+        width: 40px;
+        height: 25px;
+      }
+
+    .burger span {
+        display: block;
     }
 
-    .burger {
-        display: block;
-      }
+    .nav {
+        display: none;
+        padding: 20px 20px 40px 20px;
+        background: #282828;
+        flex-direction: column;
+        position: fixed;
+        top: var(--header-h); left: 0px;
+    }
+
+    .nav > li {
+        margin: 15px 0;
+    }
+
+    .burger input:checked ~ .nav {
+        display: flex;
+    }
 }
