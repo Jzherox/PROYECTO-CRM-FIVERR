@@ -154,6 +154,11 @@ section:nth-of-type(6) {
 .formulario button {
     margin-top: 10px;
     border: 1px solid #000;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #f0f0f0;
 }
 
 .formulario button:focus, input:focus, textarea:focus {
