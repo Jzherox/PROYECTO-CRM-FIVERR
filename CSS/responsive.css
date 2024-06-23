@@ -1,20 +1,20 @@
 @media screen and (max-width: 1060px) {
-    main>section:nth-of-type(5) {
+    section:nth-of-type(5) {
         height: auto;
     }
-
-    .precios {
+    
+    .paquetes {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .precios > div {
+    .paquetes > div {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .precios > div:last-of-type {
+    .paquetes > div:last-of-type {
         margin-bottom: 0;
     }
 }
