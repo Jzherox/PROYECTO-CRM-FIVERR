@@ -88,6 +88,7 @@ section:nth-of-type(4) > div {
 }
 
 .vid-instruc {
+    border: 3px solid #191919;
     height: 400px; width: 70%;
     box-shadow: 0px 0px 10px #000000b3;
 }
@@ -118,9 +119,11 @@ section:nth-of-type(5) > div {
 
 .paquetes > div > h3 {
     height: 40px; width: 100%;
-    background: #e1e1e1;
+    color: #fff;
+    background: #191919;
     padding: 10px 0;
     border-bottom: 1px solid #000;
+    font-weight: lighter;
 }
 
 .paquetes > div > div {
@@ -141,6 +144,8 @@ section:nth-of-type(5) > div {
     padding: 10px 0;
     margin: 0;
     border-top: 1px solid #000;
+    color: #fff;
+    background: #252525;
 }
 
 .paquetes > div > h4 > span {
@@ -179,20 +184,28 @@ section:nth-of-type(6) {
 }
 
 .formulario button {
+    background: #191919;
     margin-top: 10px;
-    border: 1px solid #c0c0c0;
+    border: 0;
     cursor: pointer;
+    color: #fff;
+    box-shadow: 0 1px 5px #0000006d;
 }
 
 .formulario button:hover {
-    background: #f0f0f0;
+    background: #292929;
 }
 
 .formulario button:active, input:focus, textarea:focus {
     color: #3c3c3c;
-    outline: 0.5px solid #929292;
-    border: transparent;
+    outline: 0;
     box-shadow: 0 1px 5px #0000006d;
+}
+
+.formulario button:active {
+    color: #fff;
+    outline: 0;
+    border: 0;
 }
 
 footer {
