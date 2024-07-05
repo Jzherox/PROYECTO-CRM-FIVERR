@@ -5,7 +5,7 @@
 header {
   height: var(--header-h);
   width: 100%;
-  background: #191919;
+  background: linear-gradient(45deg, #3c4045, #50545a 16%, #3c4045);
   color: #fff;
   overflow: hidden;
   position: fixed;
@@ -22,7 +22,19 @@ header {
   justify-content: space-between;
 }
 
-.nav-bar > h2 {
+.nav-bar > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar > div > img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-bar > div > h2 {
   width: auto;
   height: auto;
 }
@@ -51,18 +63,20 @@ header {
   font-weight: lighter;
 }
 
-.nav > li a:hover {
+.nav > li a:hover, .active-link {
   border-bottom: 1px solid;
 }
 
 .nav > li:last-of-type a {
   color: #000;
-  background: #e5e5e5;
+  background: #F3C02F;
+  border-radius: 10px;
   padding: 10px 15px;
+  transition: all .5s ;
 }
 
 .nav > li:last-of-type a:hover {
-  background: #fff;
+  box-shadow: 0 0 10px #ffffff79;
 }
 
 .burger input {

@@ -65,6 +65,14 @@
         display: flex;
     }
 
+    section:nth-of-type(5) {
+        padding: 0;
+    }
+
+    .paquetes {
+       width: 100%;
+    }
+
     .formulario input, textarea, button {
         width: 100%;
     }
@@ -75,6 +83,14 @@
 
     footer div h3 {
         font-size: 12px;
+    }
+
+    section:nth-of-type(6) {
+        height: auto;
+    }
+
+    .formulario {
+        margin-top: 40px;
     }
 }
 
