@@ -35,36 +35,7 @@
     .vid-instruc {
         height: 300px; width: 90%;
     }
-
-    .burger {
-        position: relative;
-        background: transparent;
-        cursor: pointer;
-        width: 40px;
-        height: 25px;
-      }
-
-    .burger span {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-        padding: 20px 20px 40px 20px;
-        background: #282828;
-        flex-direction: column;
-        position: fixed;
-        top: var(--header-h); left: 0px;
-    }
-
-    .nav > li {
-        margin: 15px 0;
-    }
-
-    .burger input:checked ~ .nav {
-        display: flex;
-    }
-
+    
     section:nth-of-type(5) {
         padding: 0;
     }
