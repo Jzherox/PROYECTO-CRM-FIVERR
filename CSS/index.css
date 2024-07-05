@@ -120,6 +120,7 @@ section:nth-of-type(5) > div {
     padding: 10px 0;
     border-bottom: 1px solid #000;
     font-weight: lighter;
+    color: #F3C02F;
 }
 
 .paquetes > div:nth-of-type(1) > h3{
@@ -159,6 +160,7 @@ section:nth-of-type(5) > div {
     border-top: 1px solid #000;
     color: #fff;
     background: #252525;
+    color: #F3C02F;
 }
 
 .paquetes > div > h4 > span {
