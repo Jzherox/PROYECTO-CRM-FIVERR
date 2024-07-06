@@ -20,12 +20,12 @@
 }
 
 @media screen and (max-width: 950px) {
-    section > div {
-        width: 90%;
+    section:nth-of-type(2) > div {
+        width: 80%;
     }
 
-    section:nth-of-type(2) > div > img {
-        width: 60%;
+    section > div {
+        width: 90%;
     }
 
     section:nth-of-type(3) > div > img {

@@ -5,7 +5,7 @@
 header {
   height: var(--header-h);
   width: 100%;
-  background: linear-gradient(45deg, #3c4045, #50545a 16%, #3c4045);
+  background: #3c4045;
   color: #fff;
   overflow: hidden;
   position: fixed;
