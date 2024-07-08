@@ -51,6 +51,8 @@ section > div > h3 {
     margin: 0 0 10px 0;
     border-bottom: 2px solid #F3C02F;
     padding: 10px;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
 }
 
 section:nth-of-type(1) {
@@ -66,6 +68,8 @@ section:nth-of-type(1) > div {
 section:nth-of-type(1) > div > h2 {
     font-size: 60px;
     color: #fff;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
 }
 
 section:nth-of-type(1) > div > h3 {
@@ -73,11 +77,12 @@ section:nth-of-type(1) > div > h3 {
     font-weight: 100;
     color: #F3C02F;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 section:nth-of-type(1) > div > img {
     height: 200px;
-    margin: 10px 0 0 0;
 }
 
 section:nth-of-type(2), section:nth-of-type(3) {

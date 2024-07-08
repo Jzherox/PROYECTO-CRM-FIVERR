@@ -37,6 +37,8 @@ header {
 .nav-bar > div > h2 {
   width: auto;
   height: auto;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
 }
 
 .nav {
