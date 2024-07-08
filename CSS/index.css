@@ -6,10 +6,13 @@
 }
 
 html {
-    background: #fff;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-h);
+    background: linear-gradient(-45deg, #3c4045, #50545a 52%, #3c4045);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -17,12 +20,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    color: #f9f9f9;
     margin-top: 5px;
-    color: #3c3c3c;
 }
 
 section {
-    background: #ffffff;
     height: calc(100vh - var(--header-h)); width: 100%;
     overflow: hidden;
     padding: 20px;
@@ -31,13 +33,10 @@ section {
     justify-content: center;
 }
 
-section:nth-of-type(even) {
-    background: #f7f7f7;
-}
-
 section > div {
     height: 100%; width: 80%;
-    background: #fff;
+    border-radius: 10px;
+    background: #c2c2c230;
     padding: 20px 30px;
     display: flex;
     align-items: center;
@@ -48,18 +47,15 @@ section > div {
 
 section > div > h3 {
     font-size: 22px;
+    color: #F3C02F;
     margin: 0 0 10px 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #F3C02F;
     padding: 10px;
 }
 
 section:nth-of-type(1) {
     height: 100vh;
     padding-top: 70px;
-    background: linear-gradient(-45deg, #3c4045, #50545a 52%, #3c4045);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 section:nth-of-type(1) > div {
@@ -88,18 +84,10 @@ section:nth-of-type(2), section:nth-of-type(3) {
     height: auto;
 }
 
-section:nth-of-type(2) > div {
-    width: 50%;
-}
-
 section:nth-of-type(2) > div > img {
     height: 200px;
     width: 200px;
     margin: 10px 0 0 0;
-}
-
-section:nth-of-type(3) > div {
-    box-shadow: none;
 }
 
 section:nth-of-type(3) > div > img {
@@ -127,6 +115,7 @@ section:nth-of-type(5) {
 section:nth-of-type(5) > div {
     justify-content: start;
     box-shadow: none;
+    background: none;
 }
 
 .paquetes {
@@ -141,7 +130,15 @@ section:nth-of-type(5) > div {
     height: 490px; width: 30%;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     border: 1px solid #000;
+    overflow: hidden;
+    background: #80808030;
+    transition: all .5s;
+}
+
+.paquetes > div:hover {
+    box-shadow: 0px 0px 5px #0000006d;
 }
 
 .paquetes > div > h3 {
@@ -155,11 +152,11 @@ section:nth-of-type(5) > div {
 }
 
 .paquetes > div:nth-of-type(1) > h3{
-    background: #484C51;
+    background: #44484c;
 }
 
 .paquetes > div:nth-of-type(1) > h4{
-    background: #484C51;
+    background: #44484c;
 }
 
 .paquetes > div:nth-of-type(2) > h3{
@@ -205,11 +202,14 @@ section:nth-of-type(6) {
 }
 
 .formulario {
+    border-bottom: 0;
     justify-content: start;
     margin-top: 20px;
     padding: 10px;
     width: 78%;
     height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .formulario > form > div > h4 {
@@ -217,6 +217,7 @@ section:nth-of-type(6) {
     align-items: center;
     justify-content: start;
     margin: 10px 0 5px 0;
+    color: #dddddd;
 }
 
 .formulario input, textarea, button {
@@ -227,7 +228,7 @@ section:nth-of-type(6) {
     padding: 5px;
     resize: none;
     font-size: 16px;
-    background: #fff;
+    background: #ffffff65;
 }
 
 .formulario button {
@@ -245,7 +246,7 @@ section:nth-of-type(6) {
 }
 
 .formulario button:active, input:focus, textarea:focus {
-    color: #3c3c3c;
+    color: #131313;
     outline: 0;
     box-shadow: 0 1px 5px #0000006d;
 }
