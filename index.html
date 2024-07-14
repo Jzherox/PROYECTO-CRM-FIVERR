@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Resources/icons/template.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/nav-bar.css">
     <link rel="stylesheet" href="CSS/responsive.css">
@@ -43,7 +44,7 @@
             </div>
         </section>
         <section id="2">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <h3>¿QUIÉNES SOMOS?</h3>
                 <p>MASVENDES es una empresa Mexicana que nace con el objetivo de dar una solución a
                 empresas que desean aumentar sus ventas a traves de un CRM único en el mercado.</p>
@@ -51,7 +52,7 @@
             </div>
         </section>
         <section id="3">
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000">
                 <h3>¿QUÉ ES UN CRM?</h3>
                 <p>Significa: "Customer Relationship Management" (Gestión de Relación con los Clientes). Es decir que un CRM es
                 una herramienta de gestión integrada de ventas, marketing, atención al cliente y todos los puntos de
@@ -65,14 +66,14 @@
         <section id="4">
             <div>
                 <h3>¿CÓMO FUNCIONA?</h3>
-                <iframe class="vid-instruc" width="700" height="460" src="https://www.youtube.com/embed/2069Kkhj2fE?si=vEGilmD6znnl4nok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe data-aos="flip-down" data-aos-duration="500" class="vid-instruc" width="700" height="460" src="https://www.youtube.com/embed/2069Kkhj2fE?si=vEGilmD6znnl4nok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
         <section id="5">
             <div>
                 <h3>PRECIOS</h3>
                 <div class="paquetes">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h3>Paquete Básico</h3>
                         <div>
                             <p>1 Usuario</p>
@@ -83,7 +84,7 @@
                         </div>
                         <h4><span>$500 MXN</span><br>mensuales</h4>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="2000">
                         <h3>Paquete Intermedio</h3>
                         <div>
                             <p>7 Usuarios</p>
@@ -95,7 +96,7 @@
                         </div>
                         <h4><span>$1,000 MXN</span><br>mensuales</h4>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="3000">
                         <h3>Paquete Avanzado</h3>      
                         <div>
                             <p>15 Usuarios</p>
@@ -114,7 +115,7 @@
             </div>
         </section>
         <section id="6">
-            <div class="formulario">
+            <div class="formulario" data-aos="fade-up" data-aos-duration="1000">
                 <h3>CONTÁCTANOS</h3>
                 <form action="https://formsubmit.co/eliasballadares2004@gmail.com" method="POST">
                     <div>
@@ -156,5 +157,9 @@
         </section>
     </main>
 </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="JS/secction-observer"></script>
 </html>
