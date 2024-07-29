@@ -70,7 +70,7 @@ header {
   border-bottom: 1px solid;
 }
 
-.nav > li:last-of-type a {
+ .nav > li:nth-of-type(7) a {
   color: #000;
   background: #F3C02F;
   border-radius: 10px;
@@ -78,7 +78,7 @@ header {
   transition: all .5s ;
 }
 
-.nav > li:last-of-type a:hover {
+ .nav > li:nth-of-type(7) a:hover {
   box-shadow: 0 0 10px #ffffff79;
 }
 
@@ -161,5 +161,13 @@ header {
 
   .burger input:checked ~ .nav {
       display: flex;
+  }
+
+  .nav > li:nth-of-type(7) a {
+    color: #000;
+    background: #F3C02F;
+    border-radius: 10px;
+    padding: 10px 45px;
+    transition: all .5s ;
   }
 }
