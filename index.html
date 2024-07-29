@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/nav-bar.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/login-popup.css">
     <title>MÁSVENDES</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                         <li><a href="#4" id="link4">Función</a></li>
                         <li><a href="#5" id="link5">Precios</a></li>
                         <li><a href="#6" id="link6">Contáctanos</a></li>
-                        <li><a href="" id="link7">Login</a></li>
+                        <li><a href="" id="loginBtn" id="link7">Login<i style="margin-left: 6px;" class="fa-solid fa-right-to-bracket"></i></a></li>
                     </ul>
                 </label>
             </nav>
@@ -153,10 +154,24 @@
             </Footer>
         </section>
     </main>
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
 </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="JS/secction-observer.js"></script>
+    <script src="JS/popup.js"></script>
+    <script src="https://kit.fontawesome.com/a4a2433d2c.js" crossorigin="anonymous"></script>
 </html>

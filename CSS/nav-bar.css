@@ -70,7 +70,7 @@ header {
   border-bottom: 1px solid;
 }
 
- .nav > li:nth-of-type(7) a {
+.nav > li:nth-of-type(7) a {
   color: #000;
   background: #F3C02F;
   border-radius: 10px;
