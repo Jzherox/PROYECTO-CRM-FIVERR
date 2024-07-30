@@ -39,9 +39,9 @@ body {
 
 .popup-content .close {
     position: absolute;
-    top: 10px;
+    top: 0%;
     right: 10px;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -75,6 +75,10 @@ body {
     color: #000;
 }
 
+::placeholder {
+    color: #272727;
+}
+
 .popup-content div > input:focus {
     box-shadow: none;
 }
@@ -86,4 +90,25 @@ body {
     color: #000;
     background: #F3C02F;
     cursor: pointer;
+    transition: all .5s ;
+}
+
+.popup-content button:hover {
+    box-shadow: 0 0 10px #ffffff79;
+  }
+
+.popup-content form h2 {
+    color: #F3C02F;
+    font-family: "Baloo 2", sans-serif;
+    border-bottom: 2px solid #F3C02F;
+}
+
+.popup-content form h3 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.popup-content form h3 a {
+    color: #F3C02F;
 }

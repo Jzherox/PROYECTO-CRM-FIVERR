@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var loginBtn = document.getElementById('loginBtn');
     var loginPopup = document.getElementById('loginPopup');
     var closeBtn = document.querySelector('.close');
+    var regBtn = document.querySelector('.register');
 
     loginBtn.addEventListener('click', function(event) {
         event.preventDefault();
@@ -9,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeBtn.addEventListener('click', function() {
+        loginPopup.style.display = 'none';
+    });
+
+    regBtn.addEventListener('click', function() {
         loginPopup.style.display = 'none';
     });
 
