@@ -21,7 +21,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 300px;
+    width: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     animation: popupGrow 0.3s ease-out;
 }
@@ -54,13 +54,29 @@ body {
     margin-top: 10px;
 }
 
-.popup-content input {
+.popup-content div {
     margin-top: 5px;
-    padding: 8px;
+    padding-left: 8px;
     border: 1px solid #ccc;
     background: #898989;
     font-size: 16px;
     color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup-content div > input {
+    width: 100%;
+    padding: 5px;
+    background: none;
+    font-size: 16px;
+    margin-left: 8px;
+    color: #000;
+}
+
+.popup-content div > input:focus {
+    box-shadow: none;
 }
 
 .popup-content button {
